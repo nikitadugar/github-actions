@@ -11,8 +11,8 @@ function builBinary {
     echo "copy  kuguard"
     cp kuguard -r $HOME/go/src
 
-    echo "Install go  package"
-    go get -v ./...
+    # echo "Install go  package"
+    # go get -v ./...
 
     echo  "Build binary for Mac"
     env GOOS=darwin GOACRCH=amd64 go build -o kuguard_darwin_amd64/kuguard
